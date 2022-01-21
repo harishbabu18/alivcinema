@@ -13,11 +13,37 @@ export default function AboutUs() {
 
       <main className={styles.main}>
       <h1 className={styles.title}>
-          Welcome to <a href="https://alivcinema.com">Aliv cinema</a>
+      About Us
         </h1>
-      <span className={styles.logo}>
-            <Image src="/alivcinema.png" alt="ALIV logo" width={415} height={130} />
-          </span>
+        <p>
+        We are Aliv Cinema.We are Team of cinephile focused on a mission of releasing best in class Movies in both Online and Offline.
+        </p>
+
+       <p> Our Team:-</p>
+
+       <p> B K Harish Babu</p>
+<p>Harish is a Web Developer By Profession and Filmaker by passion.Harish has good amount of experience designing websites and Advertisement Strategy</p>
+<p>Skills:-Photoshop,Website Designing,Digital Marketing,Direction</p>
+
+<p>Praveen Rehan Duraisamy</p>
+<p>Praveen is a Cinematographer by Profession and has got degree in Cinematography from Australia.He has worked in good amount of Fashon Photography assignments, Short Films and Advertisements. </p>
+<p>Skills:-Photography,Cinematography,Direction</p>
+
+<p>Pavithran Arjunan</p>
+<p>Pavithran  is a Cinematographer by Profession.He has worked in good amount of Wildlife Photography assignments,National Geography Film assignment, Short Films,  and Advertisements. </p>
+<p>Skills:-Photography,Cinematography,Direction</p>
+
+<p>K Mani Maran</p>
+<p>Mani is a Editor by Profession.He has worked in good amount of Short Films,  and Advertisements. </p>
+<p>Skills:-Editing ,Color Correction,Direction</p>
+<p>Manghesh</p>
+<p>Manghesh is a Music Director by Profession.He has good experience composing for AD Jingles and Short Film</p>
+<p>Skills:-Music Composing</p>
+
+
+
+
+
       </main>
 
       <footer className={styles.footer}>

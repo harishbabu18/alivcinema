@@ -12,7 +12,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image'
-const pages = ['About Us', 'Business Services', 'Studio Services'];
+import Link from 'next/link'
+
+const pages = [{"title":"About Us","link":"about-us"}, {"title":"Business Services","link":"business-services"},{"title":"Studio Services","link":"studio-services"}];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -44,7 +46,9 @@ const ResponsiveAppBar = () => {
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
+            <Link href="/">
             <Image src="/alivcinema.png" alt="ALIV logo" width={104} height={37} />
+            </Link>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -77,8 +81,10 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem 
+                key={page.link} 
+                onClick={handleCloseNavMenu}>
+                  <Link href={page.link}><Typography textAlign="center">{page.title}</Typography></Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -89,17 +95,19 @@ const ResponsiveAppBar = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
-            LOGO
+             <Image src="/alivcinema.png" alt="ALIV logo" width={104} height={37} />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
+                 <Link href={page.link}>
               <Button
-                key={page}
+                key={page.link}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                {page.title}
               </Button>
+              </Link>
             ))}
           </Box>
 
