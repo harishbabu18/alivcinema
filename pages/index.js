@@ -26,7 +26,6 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
           <span className={styles.logo}>
             <Image src="/teraret.svg" alt="Teraret Logo" width={83} height={29} />
           </span>
