@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image'
 import Link from 'next/link'
 
-const pages = [{"title":"About Us","link":"about-us"}, {"title":"Business Services","link":"business-services"},{"title":"Studio Services","link":"studio-services"}];
+const pages = [{"title":"About Us","link":"about-us"}, {"title":"Business Services","link":"business-services"}];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {

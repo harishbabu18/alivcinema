@@ -29,19 +29,14 @@ export default function AboutUs() {
        <CardTemplate name ="Praveen Rehan Duraisamy" about="Praveen is a Cinematographer by Profession and has got degree in Cinematography from Australia.He has worked in good amount of Fashon Photography assignments, Short Films and Advertisements." skills="Photography,Cinematography,Direction"/>
        </Grid>
        <Grid item xs={4}>
-       <CardTemplate name ="Pavithran Arjunan" about="Pavithran  is a Cinematographer by Profession.He has worked in good amount of Wildlife Photography assignments,National Geography Film assignment, Short Films,  and Advertisements." skills="Photography,Cinematography,Direction"/>
+       <CardTemplate name ="Pavithran Arjunan" about="Pavithran  is a Cinematographer by Profession.He has worked in good amount of Wildlife Photography assignments,National Geography Film assignment, Films,  and Advertisements." skills="Photography,Cinematography,Direction"/>
        </Grid>
        <Grid item xs={4}>
        <CardTemplate name ="K Mani Maran" about="Mani is a Editor by Profession.He has worked in good amount of Short Films,  and Advertisements." skills="Editing ,Color Correction,Direction"/>
        </Grid>
        <Grid item xs={4}>
        <CardTemplate name ="Manghesh" about="Manghesh is a Music Director by Profession.He has good experience composing for AD Jingles and Short Film" skills="Music Composing"/>
-
        </Grid>
-
-
-
-
        </Grid>
       </main>
     </div>
