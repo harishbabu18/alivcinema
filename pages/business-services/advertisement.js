@@ -20,22 +20,8 @@ export default function Advertisement() {
        Movie Advertisement 
        We ALIV Cinema Produce Original content such as Short Films, Tele Films and Feature Film for Our Website Release ,Youtube Release,Other OTT Release ,Theatrical and Direct TV Release thus creating great recall Value. 
        For Example
-       Let's say we have to advertise a Restaurant.We will create a scene in the restaurant show the dishes delicious and Make actors Talk about the food. Let's assume we have to promote a property,We will shoot scenes of the movie in the property and exhibit as great place to be.
+       Lets say we have to advertise a Restaurant.We will create a scene in the restaurant show the dishes delicious and Make actors Talk about the food. Let's assume we have to promote a property,We will shoot scenes of the movie in the property and exhibit as great place to be.
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="http://teraret.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/teraret.svg" alt="Teraret Logo" width={83} height={29} />
-          </span>
-          
-        </a>
-      </footer>
     </div>
   )
 }
