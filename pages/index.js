@@ -14,10 +14,9 @@ export default function Home(props) {
   {"title":"OTT Consulting","description":"","url":"","image":"https://picsum.photos/1980/480","thumbnail":"https://picsum.photos/40/40"},
 ]; 
 
- const thumbs=[<img src="https://picsum.photos/40/40"/>, 
- <img src="https://picsum.photos/40/40"/>, 
- <img src="https://picsum.photos/40/40"/>];
-
+ const thumbs=[]
+  items.map((item)=>{thumbs.push(<img
+    src={item.thumbnail} />)});
 
   return (
     <div>
@@ -30,7 +29,6 @@ export default function Home(props) {
       <Carousel
           IndicatorIcon={thumbs} 
           >
-        {/* {items.map((item)=>{item})} */}
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }
