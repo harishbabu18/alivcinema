@@ -7,10 +7,18 @@ import { Paper, Button } from '@mui/material'
 
 
 export default function Home(props) {
-  const items = [<img src="https://picsum.photos/40/40"/>, 
-  <img src="https://picsum.photos/40/40"/>, 
-  <img src="https://picsum.photos/40/40"/>
- ]; 
+ 
+  const items = [{"title":"Connected One Surface Web","description":"","url":"","image":"https://picsum.photos/1980/480","thumbnail":"https://picsum.photos/40/40"},
+  {"title":"Connected 2 Dark Web","description":"Connected 2 Dark Web","url":"","image":"https://picsum.photos/1980/480","thumbnail":"https://picsum.photos/40/40"},
+  {"title":"Advertisement","description":"","url":"","image":"https://picsum.photos/1980/480","thumbnail":"https://picsum.photos/40/40"},
+  {"title":"OTT Consulting","description":"","url":"","image":"https://picsum.photos/1980/480","thumbnail":"https://picsum.photos/40/40"},
+]; 
+
+ const thumbs=[<img src="https://picsum.photos/40/40"/>, 
+ <img src="https://picsum.photos/40/40"/>, 
+ <img src="https://picsum.photos/40/40"/>];
+
+
   return (
     <div>
       <Head>
@@ -20,9 +28,9 @@ export default function Home(props) {
       </Head>
       <main>   
       <Carousel
-          IndicatorIcon={items}
-
-      >
+          IndicatorIcon={thumbs} 
+          >
+        {/* {items.map((item)=>{item})} */}
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }
@@ -41,7 +49,7 @@ function Item(props)
     return (
         <>
             <img
-              src="https://picsum.photos/1980/400"
+              src={props.item.image}
              />
        </>
     )
