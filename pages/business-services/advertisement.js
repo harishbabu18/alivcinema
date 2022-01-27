@@ -13,13 +13,13 @@ export default function Advertisement() {
 
       <main className={styles.main}>
       <h1 className={styles.title}>Advertisement</h1>
-       Basic Advertisement:- 
+       Basic Advertisement 
        In Basic Advertisement a Model will explain your product while Showroom or Product play in Background.This Ad can be used for Advertising in Youtube, Facebook, Other Social Media and TV. 
-       Story Advertisement:- 
+       Story Advertisement 
        In Story Advertisement there will be a situation, We will showcase your product as solution for the situation.Example will be Saying in a Detergent advertisement stains are good and For Cleaning stains xyz detergent can help. 
-       Movie Advertisement:- 
+       Movie Advertisement 
        We ALIV Cinema Produce Original content such as Short Films, Tele Films and Feature Film for Our Website Release ,Youtube Release,Other OTT Release ,Theatrical and Direct TV Release thus creating great recall Value. 
-       For Example:- 
+       For Example
        Let's say we have to advertise a Restaurant.We will create a scene in the restaurant show the dishes delicious and Make actors Talk about the food. Let's assume we have to promote a property,We will shoot scenes of the movie in the property and exhibit as great place to be.
       </main>
 
