@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import CardTemplate from '../../src/CardTemplate'
+import CardTemplateUrl from '../../src/CardTemplateUrl'
 import Grid from '@mui/material/Grid';
+import {ServerUrl} from './../../src/config'
 
 export default function BusinessServices() {
   return (
@@ -22,10 +23,10 @@ export default function BusinessServices() {
        <p> Our Team:-</p>
        <Grid container spacing={2}>
        <Grid item xs={4}>
-       <CardTemplate name ="Harish Babu B K" about="Harish is a Web Developer By Profession and Filmaker by passion.Harish has good amount of experience designing websites and Advertisement Strategy" skills="Photoshop,Website Designing,Digital Marketing,Direction"/>
+       <CardTemplateUrl name="OTT Consulting" url={ServerUrl+"/business-services/ott-consulting"} />
        </Grid>
        <Grid item xs={4}>
-       <CardTemplate name ="Praveen Rehan Duraisamy" about="Praveen is a Cinematographer by Profession and has got degree in Cinematography from Australia.He has worked in good amount of Fashon Photography assignments, Short Films and Advertisements." skills="Photography,Cinematography,Direction"/>
+       <CardTemplateUrl  name="Advertisement" url={ServerUrl+"/business-services/advertisement"} />
        </Grid>
        </Grid>
       </main>

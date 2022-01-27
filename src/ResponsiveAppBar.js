@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image'
 import Link from 'next/link'
+import {ServerUrl} from './config'
 
 const pages = [{"title":"About Us","link":"about-us"}, {"title":"Business Services","link":"business-services"}];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -46,7 +47,7 @@ const ResponsiveAppBar = () => {
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-            <Link href="/">
+            <Link href={ServerUrl}>
             <Image src="/alivcinema.png" alt="ALIV logo" width={104} height={37} />
             </Link>
           </Typography>
@@ -99,7 +100,7 @@ const ResponsiveAppBar = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-                 <Link href={page.link}>
+                 <Link href={ServerUrl+"/"+page.link}>
               <Button
                 key={page.link}
                 onClick={handleCloseNavMenu}
