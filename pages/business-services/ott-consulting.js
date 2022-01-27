@@ -13,13 +13,13 @@ export default function OttConsulting() {
 
       <main className={styles.main}>
       <h1 className={styles.title}> OTT Consulting </h1>
-       ALIV CINEMA  can help in Movie and Documentary production consulting pre and post for OTT Platforms like Netflix, Amazon, Zee5 , Other OTT Platforms and Offcourse our Website as Well. 
+       {/* ALIV CINEMA  can help in Movie and Documentary production consulting pre and post for OTT Platforms like Netflix, Amazon, Zee5 , Other OTT Platforms and Offcourse our Website as Well. 
        Pre Production Consulting
       Before production of your Web series or movie we can help you with review of your Script, Equipment,Documents,behind the scenes and Camera to be used for the production. 
        Pre Production Sales Consulting
        Sales consulting involves getting appoinment with OTT platform's for production budget and Preparing your Script presentation with OTT Platforms. 
        Hybrid Release Consulting 
-       If we like your content we can release your film in Theatre and OTT on Prepaid Basis or Minimum Guarantee Basis. 
+       If we like your content we can release your film in Theatre and OTT on Prepaid Basis or Minimum Guarantee Basis.  */}
       </main>
     </div>
   )
