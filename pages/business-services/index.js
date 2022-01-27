@@ -23,10 +23,10 @@ export default function BusinessServices() {
        <p> Our Team:-</p>
        <Grid container spacing={2}>
        <Grid item xs={4}>
-       <CardTemplateUrl name="OTT Consulting" url={ServerUrl+"/business-services/ott-consulting"} />
+       <CardTemplateUrl name="OTT Consulting" url={ServerUrl+"business-services/ott-consulting"} />
        </Grid>
        <Grid item xs={4}>
-       <CardTemplateUrl  name="Advertisement" url={ServerUrl+"/business-services/advertisement"} />
+       <CardTemplateUrl  name="Advertisement" url={ServerUrl+"business-services/advertisement"} />
        </Grid>
        </Grid>
       </main>
