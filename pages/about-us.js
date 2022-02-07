@@ -24,7 +24,7 @@ const cards = [{"id":1,"title":"Harish Babu B K","content":"Harish is a Web Deve
 
 const theme = createTheme();
 
-export default function Album() {
+export default function AboutUs() {
   return (<div>
     <Head>
     <title>Aliv Cinema - About Us</title>
@@ -58,6 +58,15 @@ export default function Album() {
           </Container>
         </Box>
         <Container sx={{ py: 8 }} maxWidth="md">
+        <Typography
+              component="h1"
+              variant="h2"
+              align="center"
+              color="text.primary"
+              gutterBottom
+            >
+              Our Team
+            </Typography>
           {/* End hero unit */}
           <Grid container spacing={4}>
             {cards.map((card) => (
@@ -70,10 +79,10 @@ export default function Album() {
       />
                   <CardMedia
                     component="img"
-                    sx={{
-                      // 16:9
-                      pt: '56.25%',
-                    }}
+                    // sx={{
+                    //   // 16:9
+                    //   pt: '56.25%',
+                    // }}
                     image="https://source.unsplash.com/random"
                     alt="random"
                   />

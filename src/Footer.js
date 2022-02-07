@@ -21,27 +21,36 @@ function Copyright(props) {
   );
 }
 
+
+
+
 const footers = [
   {
     title: 'Company',
-    description: ['About Us', 'Contact us'],
+    description: [{title:"About Us",url: ServerUrl+"about-us"},
+    {title:"Advertiser Sign Up",url: ServerUrl+"business-services/sign-up"},
+    {title:"Filmmaker Sign Up",url: ServerUrl+"studio-services/sign-up"},
+                  {title:"Contact us",url: ServerUrl+"contact-us"}],
   },
   {
     title: 'Business Services',
-    description: ['OTT Consulting', 'Advertisement','Advertiser Sign Up','Filmmaker Sign Up'],
+    description: [{title:"OTT Consulting",url: ServerUrl+"business-services/ott-consulting"},
+    {title:"Advertisement",url: ServerUrl+"business-services/advertisement"}
+    ],
   },
   
   {
     title: 'Studio Services',
     description: [
-      'Photography',
-      'Video Production',
-      'Recording and Dubbing Studio'
+      {title:"Photography",url: ServerUrl+"studio-services/photography"},
+      {title:"Video Production",url: ServerUrl+"studio-services/video-production"},
+      {title:"Music Production",url: ServerUrl+"studio-services/music-production"}
     ],
   },
   {
     title: 'Legal',
-    description: ['Privacy policy', 'Terms of use'],
+    description: [{title:"Privacy policy",url: ServerUrl+"privacy-policy"},
+    {title:"Terms of use",url: ServerUrl+"terms"}],
   },
 ];
 
@@ -65,8 +74,8 @@ function FooterContent() {
               <ul>
                 {footer.description.map((item) => (
                   <li key={item}>
-                    <Link href="#" variant="subtitle1" color="text.secondary">
-                      {item}
+                    <Link href={item.url} variant="subtitle1" color="text.secondary">
+                      {item.title}
                     </Link>
                   </li>
                 ))}

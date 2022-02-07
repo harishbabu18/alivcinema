@@ -16,7 +16,7 @@ const theme = createTheme({
     // background: {
     //   default: '#000',
     // },
-    // textColor: '#000',
+    // textColor: '#fff',
     // primary1Color: '#fff',
     // primary2Color: '#ff0',
     // accent1Color: '#f00',

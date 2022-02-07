@@ -3,6 +3,8 @@ import Image from 'next/image'
 import CardTemplateUrl from '../../src/CardTemplateUrl'
 import Grid from '@mui/material/Grid';
 import {ServerUrl} from './../../src/config'
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
 import MediaControlCardUrl from './../../src/MediaControlCardUrl'
 
 export default function BusinessServices() {
@@ -14,14 +16,18 @@ export default function BusinessServices() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-      <h1>
-      Business Service
-        </h1>
-        <p>
-        We are Aliv Cinema.We are Team of cinephile focused on a mission of releasing best in class Movies in both Online and Offline.
-        </p>
-
-       <p> Our Team:-</p>
+      <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
+        <Typography
+          component="h1"
+          variant="h2"
+          align="center"
+          color="text.primary"
+          gutterBottom
+        >
+          Business Service
+        </Typography>
+      </Container>
+      <Container maxWidth="md" component="main">
        <Grid container spacing={2}>
        <Grid item xs={4}>
        {/* <MediaControlCardUrl title="OTT Consulting" description="Play Button to Know More" /> */}
@@ -32,6 +38,7 @@ export default function BusinessServices() {
        <CardTemplateUrl  name="Advertisement" url={ServerUrl+"business-services/advertisement"} />
        </Grid>
        </Grid>
+       </Container>
       </main>
     </div>
   )

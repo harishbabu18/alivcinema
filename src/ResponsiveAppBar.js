@@ -15,7 +15,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {ServerUrl} from './config'
 
-const pages = [{"title":"About Us","link":"about-us"}, {"title":"Business Services","link":"business-services"}];
+const pages = [{"title":"App","link":"app"},{"title":"About Us","link":"about-us"}, {"title":"Business Services","link":"business-services"}, {"title":"Studio Services","link":"studio-services"}];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -113,7 +113,11 @@ const ResponsiveAppBar = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
+          <Button href={ServerUrl+"app/sign-up"} variant="contained" sx={{ my: 1, mx: 1.5 }}>
+            Sign Up
+          </Button>
+
+            {/* <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
@@ -139,7 +143,7 @@ const ResponsiveAppBar = () => {
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
-            </Menu>
+            </Menu> */}
           </Box>
           
         </Toolbar>
