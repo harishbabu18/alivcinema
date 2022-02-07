@@ -3,6 +3,7 @@ import Image from 'next/image'
 import CardTemplateUrl from '../../src/CardTemplateUrl'
 import Grid from '@mui/material/Grid';
 import {ServerUrl} from './../../src/config'
+import MediaControlCardUrl from './../../src/MediaControlCardUrl'
 
 export default function BusinessServices() {
   return (
@@ -23,9 +24,11 @@ export default function BusinessServices() {
        <p> Our Team:-</p>
        <Grid container spacing={2}>
        <Grid item xs={4}>
+       {/* <MediaControlCardUrl title="OTT Consulting" description="Play Button to Know More" /> */}
        <CardTemplateUrl name="OTT Consulting" url={ServerUrl+"business-services/ott-consulting"} />
        </Grid>
        <Grid item xs={4}>
+       {/* <MediaControlCardUrl title="Advertisement" description="Play Button to Know More"  /> */}
        <CardTemplateUrl  name="Advertisement" url={ServerUrl+"business-services/advertisement"} />
        </Grid>
        </Grid>

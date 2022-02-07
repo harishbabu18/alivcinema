@@ -1,10 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import Carousel from 'react-material-ui-carousel'
-import { Paper, Button } from '@mui/material'
-
-
 
 export default function Home(props) {
  
@@ -33,7 +28,6 @@ export default function Home(props) {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }
         </Carousel>
-     
       </main>
     </div>
   )

@@ -5,6 +5,8 @@ import { ThemeProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline';
 import theme from '../src/theme';
 import ResponsiveAppBar from '../src/ResponsiveAppBar'
+import Footer from '../src/Footer';
+import GlobalStyles from '@mui/material/GlobalStyles';
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
@@ -24,9 +26,11 @@ export default function MyApp(props) {
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
       <ThemeProvider theme={theme}>
+      <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
         <CssBaseline />
         <ResponsiveAppBar />
         <Component {...pageProps} />
+        <Footer />
       </ThemeProvider>
     </React.Fragment>
   );

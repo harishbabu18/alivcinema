@@ -1,5 +1,8 @@
 import * as React from 'react';
 import Head from 'next/head'
+import AppBar from '@mui/material/AppBar';
+import Button from '@mui/material/Button';
+import CameraIcon from '@mui/icons-material/PhotoCamera';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardActions from '@mui/material/CardActions';
@@ -7,13 +10,27 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import Chip from '@mui/material/Chip';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+function Copyright() {
+  return (
+    <Typography variant="body2" color="text.secondary" align="center">
+      {'Copyright © '}
+      <Link color="inherit" href="https://mui.com/">
+        Your Website
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
+}
 
 const cards = [{"id":1,"title":"Harish Babu B K","content":"Harish is a Web Developer By Profession and Filmaker by passion.Harish has good amount of experience designing websites and Advertisement Strategy","skills":["Photoshop","Website Designing","Digital Marketing"]},
                {"id":2,"title":"Praveen Rehan Duraisamy","content":"Praveen is a Cinematographer by Profession and has got degree in Cinematography from Australia.He has worked in good amount of Fashon Photography assignments, Short Films and Advertisements.","skills":["Photography","Cinematography","Direction"]},
@@ -91,6 +108,20 @@ export default function Album() {
           </Grid>
         </Container>
       {/* Footer */}
+      <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
+        <Typography variant="h6" align="center" gutterBottom>
+          Footer
+        </Typography>
+        <Typography
+          variant="subtitle1"
+          align="center"
+          color="text.secondary"
+          component="p"
+        >
+          Something here to give the footer a purpose!
+        </Typography>
+        <Copyright />
+      </Box>
       {/* End footer */}
     </ThemeProvider>
     </main>

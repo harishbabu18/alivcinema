@@ -1,1 +1,1 @@
-export const ServerUrl = "https://alivcinema.com/"
+export const ServerUrl = "http://localhost:3000/"
