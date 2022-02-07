@@ -100,7 +100,7 @@ const ResponsiveAppBar = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-                 <Link href={ServerUrl+"/"+page.link}>
+                 <Link href={ServerUrl+page.link}>
               <Button
                 key={page.link}
                 onClick={handleCloseNavMenu}
