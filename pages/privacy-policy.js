@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import CardTemplateUrl from '../../src/CardTemplateUrl'
+import CardTemplateUrl from '../src/CardTemplateUrl';
 import Grid from '@mui/material/Grid';
-import {ServerUrl} from '../../src/config'
+import {ServerUrl} from '../src/config'
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import MediaControlCardUrl from '../../src/MediaControlCardUrl'
 
 export default function BusinessServices() {
   return (
